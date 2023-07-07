@@ -1,0 +1,240 @@
+body{font-size: 16px;}
+
+header{
+	width: 100%; height: 100%;
+	display: flex;
+	justify-content: center;
+	font-family:sans-serif;
+	font-weight: 500;
+	.head{  
+	width: 100%; height: 147px;
+	z-index: 1;
+	position: fixed;
+	background-color: white;
+	padding: 0 5%;
+		.header-top{ 
+		width: 100%; 
+		border-bottom: 1px solid #e7e7e7 ;
+		display: flex;
+		justify-content: flex-end;
+		line-height: 20px;
+			ul{ 
+			display: flex;
+				li{ 
+				margin: 5px;
+					&:nth-child(1)::after{
+					content: '';
+					width: 1px;
+					border-left: 2px solid #e7e7e7;
+					margin-left: 10px;
+					font-size: 8px;
+					}
+					a{
+					text-decoration: none;
+					color: black;
+					font-size: 14px;
+					
+					}
+				}
+			}
+		}
+		.header-box{
+		width: 100%; height: 80%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		h1{
+			.mo{display: none;}
+		}
+			.bx-1{
+			width: 50%;
+			margin-right: 10%;
+				ul{
+				display: flex;
+				justify-content: space-between;
+					li{ margin: 10px;
+						a{ 
+						font-size:20px;
+						text-decoration: none;
+						color: black;
+						white-space: nowrap;
+						}
+					}
+				}
+			}
+			.bx-2{
+			display: flex;
+				div{
+					
+					a{
+						display: flex;
+						text-decoration: none;
+						color: black;
+						span{
+						margin-right: 30%;
+						}
+					}
+				}
+				.hamburg{
+				margin-left: 26px;
+				width: 26px; height: 20px;
+				position: relative;
+				display: block;
+					a{ 
+						span{
+						width: 100%; height: 2px;
+						background-color: black;
+						display: inline-block;
+						position: absolute; top: 20%;
+						&:nth-child(1){transform: translateY(500%);}
+						&:nth-child(2){transform: translateY();}
+						&:nth-child(3){transform: translateY(-500%);}
+						}
+					}
+				}
+			}
+		}
+		}
+}
+
+
+
+
+// ------------1280-------------------
+
+@media (max-width:1280px){
+	
+	header{
+		width: 100%; height: 100%;
+		display: flex;
+		justify-content: center;
+		font-family:sans-serif;
+		font-weight: 500;
+		.head{  
+		width: 100%; height: 120px;
+		z-index: 1;
+		position: fixed;
+		background-color: white;
+		padding: 0 5%;
+			.header-top{ 
+			width: 100%; 
+			border-bottom: 1px solid #e7e7e7 ;
+			display: flex;
+			justify-content: flex-end;
+			line-height: 20px;
+				ul{ 
+				display: flex;
+					li{ 
+					margin: 5px;
+						&:nth-child(1)::after{
+						content: '';
+						width: 1px;
+						border-left: 2px solid #e7e7e7;
+						margin-left: 10px;
+						font-size: 8px;
+						}
+						a{
+						text-decoration: none;
+						color: black;
+						font-size: 14px;
+						
+						}
+					}
+				}
+			}
+			.header-box{
+			width: 100%; height: 80%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+				.bx-1{
+				width: 50%;
+				margin-right: 10%;
+					ul{
+					display: flex;
+					justify-content: space-between;
+						li{ margin: 10px;
+							a{ 
+							font-size:16px;
+							text-decoration: none;
+							color: black;
+							white-space: nowrap;
+							}
+						}
+					}
+				}
+				.bx-2{
+				display: flex;
+					div{
+						display: flex;
+						span{
+						margin-right: 30%;
+						}
+					}
+					.hamburg{
+					margin-left: 26px;
+					width: 26px; height: 20px;
+					position: relative;
+					display: block;
+						a{ 
+							span{
+							width: 100%; height: 2px;
+							background-color: black;
+							display: inline-block;
+							position: absolute; top: 20%;
+							&:nth-child(1){transform: translateY(500%);}
+							&:nth-child(2){transform: translateY();}
+							&:nth-child(3){transform: translateY(-500%);}
+							}
+						}
+					}
+				}
+			}
+			}
+	}
+	
+}
+
+// ------------1024---------------
+
+@media (max-width:1024px){
+	header{
+			.head{
+			.header-top {
+				display: none !important;
+				}
+			.header-box{
+				.bx-1{display: none !important;}
+				h1{
+					.pc{display: none;}
+					.mo{
+						display: block;
+						width: 50%;
+					}
+				}
+			}
+		}
+	}
+}
+
+// --------------------768--------------------
+@media (max-width:768px){
+	header{
+		.head{
+			height: 90px;
+			.header-box{
+				.bx-2{
+					.hamburg{
+						a{
+							span{
+								&:nth-child(1){transform: translateY(-100%);}
+						&:nth-child(2){transform: translateY(200%);}
+						&:nth-child(3){transform: translateY(500%);}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
