@@ -67,10 +67,15 @@ header {
 header .head {
   width: 100%;
   height: 147px;
-  z-index: 1;
+  z-index: 99;
   position: fixed;
   background-color: white;
   padding: 0 5%;
+  border-bottom: 1px solid #dfebf9;
+}
+header .head.active {
+  background-color: transparent;
+  border: none;
 }
 header .head .header-top {
   width: 100%;
@@ -533,10 +538,15 @@ header {
 header .head {
   width: 100%;
   height: 147px;
-  z-index: 1;
+  z-index: 99;
   position: fixed;
   background-color: white;
   padding: 0 5%;
+  border-bottom: 1px solid #dfebf9;
+}
+header .head.active {
+  background-color: transparent;
+  border: none;
 }
 header .head .header-top {
   width: 100%;
@@ -1208,4 +1218,4 @@ main .CEO p {
   main .company .cp-4 p br {
     display: none;
   }
-}/*# sourceMappingURL=company.css.map */
+}

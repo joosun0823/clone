@@ -67,10 +67,15 @@ header {
 header .head {
   width: 100%;
   height: 147px;
-  z-index: 1;
+  z-index: 99;
   position: fixed;
   background-color: white;
   padding: 0 5%;
+  border-bottom: 1px solid #dfebf9;
+}
+header .head.active {
+  background-color: transparent;
+  border: none;
 }
 header .head .header-top {
   width: 100%;
@@ -788,4 +793,4 @@ main .more button:hover {
   main .pd-3 > ul > li .pd-box {
     height: auto;
   }
-}/*# sourceMappingURL=product.css.map */
+}

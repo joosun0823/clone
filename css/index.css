@@ -67,10 +67,15 @@ header {
 header .head {
   width: 100%;
   height: 147px;
-  z-index: 1;
+  z-index: 99;
   position: fixed;
   background-color: white;
   padding: 0 5%;
+  border-bottom: 1px solid #dfebf9;
+}
+header .head.active {
+  background-color: transparent;
+  border: none;
 }
 header .head .header-top {
   width: 100%;
@@ -616,6 +621,7 @@ main .main-contents {
   width: 100%;
 }
 main .main-contents .sec-1 {
+  position: relative;
   background-image: url(../img/pc_section02_1.png);
   background-repeat: no-repeat;
 }
@@ -627,15 +633,18 @@ main .main-contents .sec-1 h1 {
 main .main-contents .sec-1 div {
   max-width: 1600px;
   margin: 0 auto;
+  width: 80%;
 }
 main .main-contents .sec-1 div ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 30px 0;
 }
 main .main-contents .sec-1 div ul li {
-  margin: 0 10px;
+  margin: 0;
   transition: 0.5s;
+  flex-shrink: 0;
 }
 main .main-contents .sec-1 div ul li:hover {
   transform: translateY(-20px);
@@ -663,6 +672,7 @@ main .main-contents .sec-1 div ul li a p {
   margin-top: 12px;
 }
 main .main-contents .sec-2 {
+  position: relative;
   margin-top: 140px;
 }
 main .main-contents .sec-2 h1 {
@@ -671,6 +681,7 @@ main .main-contents .sec-2 h1 {
   margin-bottom: 40px;
 }
 main .main-contents .sec-2 div {
+  width: 80%;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -678,11 +689,12 @@ main .main-contents .sec-2 div ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 30px 0;
 }
 main .main-contents .sec-2 div ul li {
-  margin: 0 10px;
+  margin: 0;
   width: 242px;
-  height: 250px;
+  height: 180px;
   border: 1px solid #edecef;
   background-color: white;
   border-radius: 30px;
@@ -1083,4 +1095,4 @@ main .main-contents .sec-4 div ul li a p {
   main .main-banner .search-banner .sb-1 button {
     width: 35%;
   }
-}/*# sourceMappingURL=index.css.map */
+}
