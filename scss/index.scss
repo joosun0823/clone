@@ -146,6 +146,7 @@ main {
 					transition:1s;
 					.swiper-slide {
 						margin: 0;
+						// flex: 1;
 						transition: 0.5s;
 						// flex-shrink: 0;
 
@@ -211,14 +212,15 @@ main {
 					opacity: 0;
 					transform: translateY(20%);
 					transition: 1s;
+					height: 300px;
 					> .swiper-slide {
 						margin: 0;
 						width: 242px;
-						height: 230px;
 						border: 1px solid #edecef;
 						background-color: white;
 						border-radius: 30px;
 						transition: 0.5s;
+						padding: 30px;
 						&:hover {
 							transform: translateY(-20px);
 						}
@@ -229,7 +231,7 @@ main {
 							align-items: center;
 
 							img {
-								width: 60%;
+								width: 100%;
 							}
 						}
 					}

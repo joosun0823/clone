@@ -198,38 +198,53 @@
                 color: black;
                 scale: 0.3;
             }
-        </style>    
-        <script>
-            let swiper1 = new Swiper(".mySwiper1", {
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },navigation: {
-                nextEl: ".btn_mySwiper1_next",
-                prevEl: ".btn_mySwiper1_prev",
-                },
-                // slidesPerView: 5,
-                // spaceBetween: 30,
-                breakpoints: {
-                    0: {
-                        slidesPerView: 3,
-                        
-                        spaceBetween: 30,
-                    },
-                    768 : {
-                        slidesPerView: 5,
-                        grid: {
-                            rows: 1,
-                        },
-                        spaceBetween: 30,
-                    },
-                    1400: {
-                        slidesPerView: 6,
-                        spaceBetween: 30,
-                    }
+            .swiper-grid{height:520px;}
 
-                }
-            });
+            .swiper-grid-column .swiper-wrapper {
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: start !important;
+            }
+            .swiper-slide{height:auto !important}
+        </style>   
+        
+        <script>
+            window.onload = function(){
+                let swiper1 = new Swiper(".mySwiper1", {
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },navigation: {
+                    nextEl: ".btn_mySwiper1_next",
+                    prevEl: ".btn_mySwiper1_prev",
+                    },
+                    breakpoints: {
+                        0: {
+                            slidesPerView: 3,
+                            grid: {
+                                rows: 2,
+                            },
+                            spaceBetween: 30,
+                            slidesPerGroup: 6,
+                            slidesPerColumn: 2,
+                        },
+                        768 : {
+                            slidesPerView: 5,
+                            grid: {
+                                rows: 1,
+                            },
+                            spaceBetween: 30,
+                        },
+                        1400: {
+                            slidesPerView: 6,
+                            spaceBetween: 30,
+                            
+                        }
+
+                    }
+                });
+            }
+            
 
             let swiper2 = new Swiper(".mySwiper2", {
                 
@@ -242,26 +257,27 @@
                 },
                 breakpoints: {
                     0: {
-                        slidesPerView: 3,
-                        slidesPerColumn: 2,
-                        //slidesPerColumnFill: "row",
-                        slidesPerGroup: 6,
-                        
-                        spaceBetween: 30,
-                    },
-                    768 : {
-                        slidesPerView: 5,
-                        grid: {
-                            rows: 1,
+                            slidesPerView: 3,
+                            grid: {
+                                rows: 2,
+                            },
+                            spaceBetween: 30,
+                            slidesPerGroup: 6,
+                            slidesPerColumn: 2,
                         },
-                        spaceBetween: 30,
-                    },
-                    1400: {
-                        slidesPerView: 6,
-                        spaceBetween: 30,
-                    }
-
-                }
+                        768 : {
+                            slidesPerView: 5,
+                            grid: {
+                                rows: 1,
+                            },
+                            spaceBetween: 30,
+                        },
+                        1400: {
+                            slidesPerView: 6,
+                            spaceBetween: 30,
+                            
+                        }
+                },
             });
 
 

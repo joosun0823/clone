@@ -9,7 +9,9 @@ const ob = new IntersectionObserver(function(entries, observer) {
             entriesV.target.classList.add("active")
             console.log(entriesV);
         } else {
-            entriesV.target.classList.remove("active")
+            if(window.pageYOffset < entriesV.target.offsetTop) {
+                entriesV.target.classList.remove("active")
+            }
         }
     })
 });
@@ -22,43 +24,3 @@ ob.observe(thirdWrap);
 ob.observe(fourthWrap);
 
 
-// function handleSwiper() {
-//     if( window.matchMedia("(max-width:768px)").matches) {
-//             new Swiper(".mySwiper1",{
-//                 slidesPerView: 3,
-//     spaceBetween: 30,
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//     },navigation: {
-//     nextEl: ".btn_mySwiper1_next",
-//     prevEl: ".btn_mySwiper1_prev",
-//     },
-//             });
-//     } else {
-        
-//     if (typeof swiper !== "undefined" && swiper !== null) {
-//         swiper.destroy();
-//     }
-// }
-// }
-
-// handleSwiper();
-// window.addEventListener("resize", handleSwiper);
-
-// function handleSwiper2() {
-//     if( window.matchMedia("(max-width:768px)").matches) {
-//             new Swiper(".mySwiper2",{
-//                 slidesPerView: 3,
-//                 spaceBetween: 30,
-//             });
-//     } else {
-
-//     if (typeof swiper !== "undefined" && swiper !== null) {
-//     swiper.destroy();
-//     }
-// }
-// }
-
-// handleSwiper2();
-// window.addEventListener("resize", handleSwiper2);
