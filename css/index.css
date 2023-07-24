@@ -849,7 +849,7 @@ main .main-contents .sec-2 .swiper.mySwiper2 > .swiper-wrapper > .swiper-slide {
   background-color: white;
   border-radius: 30px;
   transition: 0.5s;
-  padding: 50px;
+  padding: 40px;
 }
 main .main-contents .sec-2 .swiper.mySwiper2 > .swiper-wrapper > .swiper-slide:hover {
   transform: translateY(-20px);
