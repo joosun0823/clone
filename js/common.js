@@ -25,7 +25,7 @@ function afterLoad() {
             $("header").addClass("active")
         })
         $("header").on("mouseleave",function(){
-            $(".master-innerBox").removeClass("active")
+            $(".master-innerBox"    ).removeClass("active")
             $("header").removeClass("active")
         })
     }

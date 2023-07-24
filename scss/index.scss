@@ -212,7 +212,7 @@ main {
 					opacity: 0;
 					transform: translateY(20%);
 					transition: 1s;
-					height: 300px;
+					
 					> .swiper-slide {
 						margin: 0;
 						width: 242px;
@@ -220,7 +220,8 @@ main {
 						background-color: white;
 						border-radius: 30px;
 						transition: 0.5s;
-						padding: 30px;
+						padding: 50px;
+						
 						&:hover {
 							transform: translateY(-20px);
 						}
