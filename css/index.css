@@ -55,6 +55,9 @@ table {
 body {
   font-size: 16px;
 }
+body.ds-none {
+  overflow: hidden;
+}
 
 header {
   width: 100%;
@@ -234,6 +237,8 @@ header .head .header-box > .bx-1 > .master-innerBox > li .innerBox {
   opacity: 0;
   margin-top: 35px;
   position: absolute;
+  left: 0;
+  right: 0;
 }
 header .head .header-box > .bx-1 > .master-innerBox > li .innerBox > li {
   padding: 12px 0;
@@ -282,10 +287,6 @@ header .head .header-box .bx-2 .hamburg a span:nth-child(2) {
 }
 header .head .header-box .bx-2 .hamburg a span:nth-child(3) {
   transform: translateY(-500%);
-}
-
-.ds-none {
-  overflow: hidden;
 }
 
 @media (max-width: 1280px) {

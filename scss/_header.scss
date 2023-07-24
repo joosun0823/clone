@@ -1,4 +1,7 @@
 body {
+	&.ds-none {
+		overflow: hidden;
+	}
 	font-size: 16px;
 }
 
@@ -221,6 +224,8 @@ header {
 							opacity: 0;
 							margin-top: 35px;
 							position: absolute;
+							left: 0;
+							right: 0;
 							>li {
 								padding: 12px 0;
 								text-align: center;
@@ -290,11 +295,6 @@ header {
 		}
 	}
 }
-
-.ds-none {
-	overflow: hidden;
-}
-
 
 
 // ------------1280-------------------
